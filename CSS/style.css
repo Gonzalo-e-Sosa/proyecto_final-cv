@@ -1,0 +1,379 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 45px;
+}
+
+:root{
+    --color1: #155263; 
+    --color2: #ff6f3c; 
+    --color3: #ff9a3c; 
+    --color4: #ffc93c; 
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+#contenedor_nav{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    left: 0;
+    min-height: 50px;   
+    width: 100%;
+}
+
+#contenedor_nav > nav{
+    padding: 1rem;
+    background-color: var(--color1);
+}
+
+#contenedor_nav-links{
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+#contenedor_nav-links > li > a{
+    color: #ffffff;
+    transition: color 0.2s ease-in;
+    -webkit-transition: color 0.2s ease-in;
+    -moz-transition: color 0.2s ease-in;
+    -ms-transition: color 0.2s ease-in;
+    -o-transition: color 0.2s ease-in;
+}
+
+#contenedor_nav-links > li > a:hover{
+    color: #ffffffa9;
+}
+
+#contenedor_nav-links > li > a:hover > i{
+    color: #ffffffa9;
+}
+
+#contenedor_nav-links > li > a:visited{
+    color: #ffffff;
+}
+
+
+#inicio, #contacto, #estudios, #experiencia, #formulario{
+    padding: 1rem;
+    height: 95vh;
+    max-width: 100%;
+}
+
+#formulario{
+    height: 85vh;
+}
+
+
+.carta{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#persona{
+    margin-top: 3rem;
+    display: flex;
+}
+
+.usuario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo{
+    text-align: right;
+    white-space: nowrap;
+    font-size: 18px;
+    max-width: 100%;
+    padding-right: .5em;
+}
+
+#nombre{
+    color: #000000;
+    font-size: 3em;
+}
+
+#trabajo{
+    color: var(--color3);
+    font-size: 2em;
+}
+
+#contenedor_bio{
+    padding: .5rem;
+}
+
+#bio{
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 1.75em;
+}
+
+#contenedor_img{
+    padding: 0 0 1rem 1rem;
+    width: max-content;
+}
+
+#img_perfil{
+    height: auto;
+    width: 128px;
+    border-radius: 40%;
+    -webkit-border-radius: 40%;
+    -moz-border-radius: 40%;
+    -ms-border-radius: 40%;
+    -o-border-radius: 40%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#redes{
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    align-content: flex-end;
+    justify-content: space-evenly;
+}
+
+#redes > a{
+    margin: auto 0;
+}
+
+#redes > a > i{
+    color: var(--color3);
+    font-size: 3.5em;
+
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+
+#redes > a > i:hover{
+    color: var(--color2);
+
+    transform: scale(110%);
+    -webkit-transform: scale(110%);
+    -moz-transform: scale(110%);
+    -ms-transform: scale(110%);
+    -o-transform: scale(110%);
+}
+
+#contacto{
+    background-color: var(--color3);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor_titulo{
+    margin-top: .5em;
+}
+
+.contenedor_titulo h2{
+    margin-bottom: 1em;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.datos{
+    height: 100%;
+    padding: .5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.datos .carta{
+   padding: 1rem;
+   align-items: unset;
+   justify-content: unset;
+}
+
+.datos .carta .descripcion{
+    padding-left: 1.5rem;
+}
+
+.datos .carta .descripcion h3{
+    margin-bottom: 1.5rem;
+}
+
+#contacto .datos .carta .descripcion a{
+    color: #ffffff;
+}
+
+#contacto .datos .carta .descripcion p{
+    color: #ffffff;
+    padding-bottom: 0.3rem;
+}
+
+.contenedor_icono{
+    flex-basis: 3rem;
+    display: flex;
+}
+
+.contenedor_icono > i{
+    font-size: 2.75rem;
+    margin: 0 auto;
+}
+
+#estudios .datos{
+    height: fit-content;
+}
+
+#formulario h2{
+    color: var(--color3);
+}
+
+#formulario .datos{
+    height: 80%;
+}
+
+.datos form{
+    height: 90%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+form .contenedor_input{
+    height: 5rem;
+    font-size: 1.5rem;
+}
+
+form label{
+    position: absolute;
+    color: var(--color3);
+}
+
+form input, form textarea{
+    margin-top: 2rem;
+    width: 15rem;
+    padding: .3rem;
+    border: none;
+    border-bottom: .1rem solid var(--color2);
+    outline: none;
+}
+
+form textarea{
+    resize: none;
+    height: 80%;
+}
+
+
+footer{
+    width: 100%;
+    padding: 1rem 0;
+
+    background-color: var(--color1);
+    color: #ffffff;
+
+    font-size: 1.2rem;
+
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.icono{
+    color: unset;
+}
+
+@media screen and (max-width: 550px){
+    #estudios .datos .carta{
+        flex-wrap: nowrap;
+    }
+
+}
+
+@media screen  and (min-width: 450px){
+    .datos .carta{
+        justify-content: space-evenly;
+    }
+
+    .datos .carta .descripcion{
+        flex-basis: 15rem;
+    }
+    
+}
+
+@media screen and (min-width: 700px) {
+    .datos{
+        flex-wrap: nowrap;
+    }
+    .datos .carta .contenedor_icono{
+        margin: auto 0;
+        padding-bottom: .3rem;
+    }
+    .datos .carta .descripcion{
+        height: 10rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 990px){
+    .contenedor_titulo{
+        margin-top: 1rem;
+    }
+
+    .datos{
+        align-items: center;
+    }
+
+    #estudios .datos{
+        align-items: unset;
+    }
+
+    .datos .carta .descripcion{
+        font-size: 1.35rem;
+    }
+
+    .datos .carta .contenedor_icono{
+        margin: 0;
+    }
+
+    .datos .carta i{
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 600px){   
+    .titulo{
+        white-space: normal;
+        font-size: 12px;
+    }
+    #bio{
+        text-align: left;
+        font-size: 20px;
+    }
+
+    .contenedor_titulo h2{
+        font-size: 2em;
+    }
+
+}
+
+@media screen and (max-width: 950px){
+    #persona{
+        flex-wrap: wrap;
+    }
+
+    #redes > a > i{
+        font-size: 2.25rem;
+    }
+}

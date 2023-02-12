@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final Integrador | Front end Academy - 2022 | CV</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- Fuentes -->
+
+    <!-- Íconos -->
+    <script src="https://kit.fontawesome.com/5b046e9275.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="contenedor_nav">
+        <nav>
+            <ul id="contenedor_nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#estudios">Estudios</a></li>
+                <li><a href="#formulario">Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- <i class="fa-solid fa-bars"></i> -->
+    <!-- Inicio -->
+    <main id="inicio">
+        <section id="persona">
+            <div class="carta">
+                <div class="usuario">
+                    <div class="titulo">
+                        <h1 id="nombre"></h1>
+                        <h2 id="trabajo"></h2>
+                    </div>
+                    <picture id="contenedor_img">
+                        <img id="img_perfil" loading="lazy">
+                    </picture>
+                </div>
+                <div id="contenedor_bio">
+                    <p id="bio"></p>
+                </div>
+            </div>
+            <section id="redes">
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>                    
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer"> <i class="fa-brands fa-github"></i></a>
+            </section>
+        </section>
+    </main>
+    <!-- Contacto -->
+    <section id="contacto">
+        <div class="contenedor_titulo">
+            <h2>Como contactarme</h2>
+        </div>
+        <section class="datos">
+            <div class="carta">
+                <div class="contenedor_icono">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+                <div class="descripcion">
+                    <h3>NÚMEROS DE TELÉFONO</h3>
+                    <p><a id="telefono" href="tel:+"></a></p>
+                    <p><a id="celular" href="tel:+"></a></p>
+                </div>
+            </div>
+            <div class="carta">
+                    <div class="contenedor_icono">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="descripcion">
+                        <h3>UBICACIÓN</h3>
+                        <p id="direccion"></p>
+                        <p id="ciudad"></p>
+                        <p id="estado"></p>
+                        <p id="pais"></p>
+                    </div>
+            </div> 
+            <div class="carta">
+                <div class="contenedor_icono">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </div>
+                <div class="descripcion">
+                    <h3>DIRECCIÓN DE EMAIL</h3>
+                    <p><a id="email" href="mailto:"></a></p>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- Estudios -->
+    <section id="estudios">
+        <div class="contenedor_titulo">
+            <h2>Estudios</h2>
+        </div>
+        <section class="datos">
+            <div class="carta">
+                <div class="contenedor_icono">
+                    <i class="fa-brands fa-html5"></i>
+                </div>
+                <div class="descripcion">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto illo provident, laborum mollitia placeat perferendis repellat omnis id fugiat commodi voluptatum, natus, sit illum et velit necessitatibus blanditiis quam autem.</p>
+                </div>
+            </div>
+            <div class="carta">
+                <div class="contenedor_icono">
+                    <i class="fa-brands fa-css3-alt"></i>
+                </div>
+                <div class="descripcion">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit possimus delectus voluptatibus neque officia, voluptate sunt. Animi quo consequatur debitis non eum harum optio temporibus quam laboriosam adipisci, quidem cum.</p>
+                </div>
+            </div>
+            <div class="carta">
+                <div class="contenedor_icono">
+                    <i class="fa-brands fa-square-js"></i>
+                </div>
+                <div class="descripcion">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, quos deleniti quisquam nemo natus ut provident numquam. Quis aliquam deleniti vero, officia beatae eum placeat enim aperiam commodi, iusto odio?</p>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- Formulario de contacto -->
+    <section id="formulario">
+        <div class="contenedor_titulo">
+            <h2>Formulario</h2>
+        </div>
+        <section class="datos">
+            <form action="">
+                <div class="contenedor_input">
+                    <label for="form_nombre">Nombre</label>
+                    <input id="form_nombre" type="text" placeholder="Nombre..." required>
+                </div>
+                <div class="contenedor_input">
+                    <label for="form_email">Email</label>
+                    <input id="form_email" type="email" placeholder="ejemplo@email.com" required>
+                </div>
+                <div class="contenedor_input">
+                    <label for="form_mensaje">Mensaje</label>
+                    <textarea id="form_mensaje" name="mensaje" placeholder="Mensaje..." required></textarea>
+                </div>
+            </form>    
+        </section>
+    </section>
+    <!--- Datos de contacto del Programador --->
+    <footer>
+        <i class="fa-solid fa-copyright"></i>
+        <p>Gonzalo Ezequiel Sosa</p>
+        <a class="icono" href="https://github.com/Gonzalo-e-Sosa" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+    </footer>
+
+    <script src="JS/api.js"></script>
+</body>
+</html>
